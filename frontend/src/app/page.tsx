@@ -159,10 +159,12 @@ export default async function Home() {
                     <ArrowRight className="w-4 h-4 ml-2 flex-shrink-0" />
                 </Button>
               </Link>
-              <Button variant="outline" className="w-full sm:w-auto border-blue-200 hover:bg-blue-50 rounded-xl">
-                <Users className="w-4 h-4 mr-2 flex-shrink-0" />
-                <span className="truncate">Tham gia cộng đồng</span>
+              <Link href="/login">
+                <Button variant="outline" className="w-full sm:w-auto border-blue-200 hover:bg-blue-50 rounded-xl">
+                  <Users className="w-4 h-4 mr-2 flex-shrink-0" />
+                  <span className="truncate">Tham gia cộng đồng</span>
               </Button>
+              </Link>
             </div>
 
           </div>

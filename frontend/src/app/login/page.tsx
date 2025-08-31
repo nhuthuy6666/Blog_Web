@@ -28,6 +28,9 @@ export default function LoginPage() {
       return;
     }
 
+    localStorage.removeItem("token");
+    localStorage.removeItem("user");
+
     const data = await res.json();
 
     localStorage.setItem("token", data.access_token); 
